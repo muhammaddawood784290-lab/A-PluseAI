@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AdPulse AI</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/index.css" />
 
-  <link
+  <!-- <link
     rel="preconnect"
     href="https://fonts.googleapis.com"
   />
@@ -21,109 +21,47 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
-  />
+  /> -->
 
-  <link rel="stylesheet" href="./css/index.css" />
 </head>
 
+
 <body>
-
-  <!-- NAVBAR -->
-
-  <header class="navbar">
-
-    <div class="logo">
-      AdPulse AI
-    </div>
-
-    <nav>
-
-      <ul class="nav-links">
-
-        <li>
-          <a href="#">Home</a>
-        </li>
-
-        <li>
-          <a href="#">Features</a>
-        </li>
-
-        <li>
-          <a href="#">Pricing</a>
-        </li>
-
-        <li>
-          <a href="#">Dashboard</a>
-        </li>
-
-      </ul>
-
-    </nav>
-
-    <button class="nav-btn">
-      Get Started
-    </button>
-
-  </header>
-
-  <!-- HERO SECTION -->
-
-    <section class="hero">
-
+  <div data-barba="wrapper">
+    <div data-barba="container">
+      <!-- NAVBAR -->
+      <header class="navbar">
+        <div class="logo">AdPulse AI</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="../index/index.html">Home</a></li>
+            <li><a href="../index/feature.html">Features</a></li>
+            <li><a href="../index/pricing.html">Pricing</a></li>
+            <li><a href="../index/dashboard.html">Dashboard</a></li>
+          </ul>
+        </nav>
+        <a class="nav-btn" href="../index/login.html">Get Started</a>
+      </header>
+      <!-- HERO SECTION -->
+      <section class="hero">
         <div class="hero-left">
-
-            <p class="tag">
-                AI Powered Marketing Platform
-            </p>
-
-            <h1>
-                Grow Faster With Smart AI Analytics
-            </h1>
-
-            <p class="hero-text">
-                AdPulse AI helps businesses track campaigns,
-                monitor analytics, and improve conversions
-                using intelligent insights and real-time data.
-            </p>
-
-            <div class="hero-buttons">
-
-                <button class="primary-btn">
-                    Start Free Trial
-                </button>
-
-                <button class="secondary-btn">
-                    Watch Demo
-                </button>
-
-            </div>
-
+          <p class="tag">AI Powered Marketing Platform</p>
+          <h1>Grow Faster With Smart AI Analytics</h1>
+          <p class="hero-text">AdPulse AI helps businesses track campaigns, monitor analytics, and improve conversions using intelligent insights and real-time data.</p>
+          <div class="hero-buttons">
+            <a class="primary-btn" href="../index/login.html">Start Free Trial</a>
+            <a class="secondary-btn" href="../index/login.html">Watch Demo</a>
+          </div>
         </div>
-
         <div class="hero-right">
-
-            <div class="dashboard-card">
-
-                <h3>Campaign Analytics</h3>
-
-                <div class="analytics-box">
-                  <span>Revenue</span>
-                    <h2>$24,580</h2>
-                </div>
-
-                <div class="analytics-box">
-                    <span>Conversions</span>
-                    <h2>1,284</h2>
-                </div>
-
-                <div class="analytics-box">
-                    <span>Growth</span>
-                    <h2>+32%</h2>
-                </div>
-
-            </div>
-
+          <div class="dashboard-card">
+            <h3>Campaign Analytics</h3>
+            <div class="analytics-box"><span>Revenue</span><h2>$24,580</h2></div>
+            <div class="analytics-box"><span>Conversions</span><h2>1,284</h2></div>
+            <div class="analytics-box"><span>Growth</span><h2>+32%</h2></div>
+          </div>
         </div>
+      </section>
 
     </section>
 
@@ -171,7 +109,13 @@
 
   </footer>
 
-  <script src="js/app.js"></script>
+  <script src="../js/index.js"></script>
 
+  <!-- GSAP for animations (required by Barba.js transitions) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- Barba.js for page transitions -->
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="../js/barba-init.js"></script>
+  <script src="../js/animations.js"></script>
 </body>
 </html>

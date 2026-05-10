@@ -1,3 +1,40 @@
+/* Animations */
+.fade-in {
+  animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-60px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in-right {
+  animation: slideInRight 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(60px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.pulse {
+  animation: pulseAnim 0.4s;
+}
+
+@keyframes pulseAnim {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
 *{
   margin: 0;
   padding: 0;
@@ -115,6 +152,7 @@ body{
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .primary-btn:hover{
@@ -130,6 +168,7 @@ body{
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .secondary-btn:hover{
@@ -195,7 +234,7 @@ body{
 }
 
 .feature-card{
-  background: #111827;
+  background: hsl(199, 98%, 40%);
   padding: 35px;
   border-radius: 20px;
   transition: 0.3s;
